@@ -1,0 +1,40 @@
+{
+  "rules": [
+    {
+      "name": "IP_Count",
+      "invert": false,
+      "thresholds": {"medium": 5, "high": 8, "very_high": 10},
+      "weights": {"medium": 15, "high": 22, "very_high": 28}
+    },
+    {
+      "name": "Median_TTL",
+      "invert": true,
+      "thresholds": {"medium": 300, "high": 150},
+      "weights": {"medium": 10, "high": 12}
+    },
+    {
+      "name": "ASN_Diversity",
+      "invert": false,
+      "thresholds": {"medium": 3, "high": 5, "very_high": 8},
+      "weights": {"medium": 12, "high": 18, "very_high": 22}
+    },
+    {
+      "name": "Geo_Diversity",
+      "invert": false,
+      "thresholds": {"medium": 3, "high": 5, "very_high": 8},
+      "weights": {"medium": 10, "high": 15, "very_high": 20}
+    },
+    {
+      "name": "Domain_Age",
+      "invert": true,
+      "thresholds": {"medium": 30, "high": 14, "very_high": 7},
+      "weights": {"medium": 6, "high": 8, "very_high": 10}
+    },
+    {
+      "name": "Mannheim_Rule",
+      "invert": false,
+      "thresholds": {"medium": 50, "high": 100, "very_high": 142},
+      "weights": {"medium": 10, "high": 15, "very_high": 20}
+    }
+  ]
+}

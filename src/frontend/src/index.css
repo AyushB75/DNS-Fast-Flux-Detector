@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-dark-900 text-white font-sans antialiased;
+  background: linear-gradient(135deg, #0f172a 0%, #1a1f3a 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-500;
+}
+
+.card {
+  @apply bg-dark-800 border border-dark-700 rounded-lg p-4 shadow-lg transition-all duration-300 hover:border-dark-600;
+}
+
+.card-hover {
+  @apply cursor-pointer hover:shadow-glow;
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-neon-cyan text-dark-900 font-semibold rounded-lg transition-all duration-300 hover:shadow-glow hover:scale-105;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-dark-700 text-white border border-dark-600 rounded-lg transition-all duration-300 hover:border-neon-cyan hover:text-neon-cyan;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 bg-dark-700 border border-dark-600 rounded-lg text-white placeholder-dark-400 focus:outline-none focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan transition-all;
+}
+
+.terminal {
+  @apply font-mono text-sm bg-dark-900 border border-dark-700 rounded-lg p-4 h-48 overflow-y-auto bg-black text-neon-green;
+  font-family: 'Courier New', monospace;
+}
+
+.status-badge {
+  @apply inline-block px-3 py-1 rounded-full text-xs font-semibold;
+}
+
+.status-high {
+  @apply bg-red-900/30 text-risk-high border border-risk-high;
+}
+
+.status-medium {
+  @apply bg-orange-900/30 text-risk-medium border border-risk-medium;
+}
+
+.status-low {
+  @apply bg-green-900/30 text-risk-low border border-risk-low;
+}
+
+.rule-card-high {
+  @apply border-l-4 border-risk-high shadow-glow-red;
+}
+
+.rule-card-medium {
+  @apply border-l-4 border-risk-medium shadow-glow-orange;
+}
+
+.rule-card-low {
+  @apply border-l-4 border-risk-low shadow-glow-green;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink bg-clip-text text-transparent;
+}
