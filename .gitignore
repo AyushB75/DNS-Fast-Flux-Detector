@@ -21,6 +21,7 @@ env/
 dataset/
 data/
 misc.txt
+whitelist.txt
 
 # ==================================================
 # MACHINE LEARNING MODELS
