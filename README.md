@@ -177,7 +177,3 @@ All config lives in `src/config/`:
 | DNS | dnspython, MaxMind GeoLite2 |
 
 ---
-
-## License
-
-MIT
