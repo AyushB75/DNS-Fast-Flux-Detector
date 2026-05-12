@@ -1,4 +1,10 @@
-# DNS Fast Flux Detector
+# 🔍 DNS Fast Flux Detector
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![React](https://img.shields.io/badge/React-18-61DAFB)
+![Flask](https://img.shields.io/badge/Flask-REST_API-black)
+![ML](https://img.shields.io/badge/ML-scikit--learn-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 A network security tool for detecting **fast-flux DNS** techniques used by botnets, phishing campaigns, and malware infrastructure. Combines a rule-based scoring engine with machine learning classification to analyze domains and flag suspicious behavior in real time.
 
